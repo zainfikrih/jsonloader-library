@@ -1,5 +1,6 @@
 [![](https://jitpack.io/v/zainfikrih/jsonloader-library.svg)](https://jitpack.io/#zainfikrih/jsonloader-library)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab5f6e4c77a0474280b46883ce17092b)](https://www.codacy.com/manual/zainfikrih/jsonloader-library?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zainfikrih/jsonloader-library&amp;utm_campaign=Badge_Grade)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # JSONLoader Library
 A simple library to open JSON from assets
@@ -42,3 +43,20 @@ Get JSON as JSON Array:
 ```
 
 For some examples, see the sample App.
+
+## License
+```license
+Copyright 2019 Zain Fikri H
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+     
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
