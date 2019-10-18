@@ -23,46 +23,5 @@
             "Rotasi tanaman",
             "Pemanfaatan musuh alami antara lain parasitoid larva dan pupa (Biosteres sp, Opius sp), predator semut, Arachnidae (laba – laba), Staphylinidae (kumbang) dan Dermatera (Cecopet)."
         ]
-    },
-    {
-        "nama": "Kutu Kebul",
-        "img": "file:///android_asset/img/kutu_kebul.PNG",
-        "gejala": "Gejala  serangan  pada  daun  berupa  bercak  nekrotik, disebabkan oleh rusaknya sel-sel dan jaringan daun akibat serangan nimfa dan serangga dewasa. Pada saat populasi tinggi, serangan kutu kebul dapat menghambat pertumbuhan tanaman. Embun muda yang dikeluarkan oleh kutu  kebul dapat menimbulkan serangan jamur jelaga yang berwarna hitam, menyerang berbagai stadia tanaman. Keberadaan embun jelaga menyebabkan terganggunya proses fotosintesis pada daun.",
-        "pengendalian": [
-            "Pemanfaatan musuh alami, seperti predator, parasitoid dan patogen serangga.",
-            "Predator yang diketahui efektif terhadap kutu kebul, antara lain Menochilus sexmaculatus (mampu memangsa larva Bemisia tabaci sebanyak 200 – 400 larva/hari), Coccinella septempunctata, Scymus syriacus, Chrysoperla carnea, Scrangium parcesetosum, Orius albidipennis, dll.",
-            "Parasitoid yang diketahui efektif menyerang B. Tabaci adalah Encarcia adrianae (15 spesies), E. Tricolor, Eretmocerus   corni   (4   spesies),   sedangkan   jenis patogen yang menyerang B. Tabaci, antara lain Bacillus thuringiensis, Paecilomyces farinorus dan Eretmocerus.",
-            "Penggunaan perangkap kuning dapat dipadukan dengan pengendalian secara fisik/mekanik dan penggunaan insektisida secara selektif. Dengan cara tersebut populasi hama dapat ditekan dan kerusakan yang ditimbulkannya dapat dicapai dalam waktu yang relatif lebih cepat.",
-            "Sanitasi lingkungan",
-            "Tumpangsari antara cabai dengan  Tagetes, penanaman jagung disekitar tanaman cabai sebagai tanaman perangkap.",
-            "Sistem pergiliran tanaman (rotasi) dengan tanaman bukan inang, seperti tanaman kentang dan mentimun.",
-            "Penggunaan pestisida selektif sebagai alternatif terakhir antara lain Permethrin, Amitraz, Fenoxycarb, Imidacloprid, Bifenthrin, Deltamethrin, Buprofezin, Endosulphan dan asefat."
-        ]
-    },
-    {
-        "nama": "Kutu Daun Persik",
-      "img": "file:///android_asset/img/kutu_daun_persik.png",
-        "gejala": "Kutu daun yang berada pada permukaan bawah daun mengisap cairan daun muda dan bagian tanaman yang masih muda. Daun yang terserang akan tampak berbercak-bercak. Hal ini akan menyebabkan daun menjadi keriting. Pada bagian tanaman yang terserang akan didapati kutu  yang bergerombol. Bila terjadi serangan berat daun akan berkerut- kerut (menjadi keriput), tumbuhnya kerdil, berwarna kekuningan, daun-daunnya terpuntir, menggulung kemudian layu dan mati. Kutu daun persik merupakan hama yang menjadi hama utama karena beberapa alasan diantaranya mampu   bertahan   hidup   pada   hampir   semua   tanaman budidaya, merupakan penular yang paling efisien dibandingkan hama lainnya.",
-        "pengendalian": [
-            "Pengendalian hama kutu daun ini dapat dilakukan dengan penyemprotan insektisida, bila populasi tinggi (ambang batas), yaitu lebih dari 50 setiap tanaman pada tanaman muda, tanaman pindahan, hampir panen. Musuh alami kutu daun ini dapat berupa parasitoid yaitu Diaretiella rapae, sedangkan predator yang berfungsi sebagai musuh alami dari hama ini seperti kumbang macan, laba-laba, larva dari syrphid, dan belalang sembah."
-        ]
-    },
-    {
-        "nama": "Kutu Daun",
-        "img": "file:///android_asset/img/kutu_daun.PNG",
-        "gejala": "Serangan berat biasanya terjadi pada musim kemarau. Bagian tanaman yang diserang oleh nimfa dan imago biasanya pucuk tanaman dan daun muda. Daun yang diserang akan mengkerut, mengeriting dan melingkar, menyebabkan pertumbuhan tanaman terhambat dan tanaman menjadi kerdil. Hama ini juga mengeluarkan cairan manis seperti madu, yang biasanya disebut dengan embun madu. Embun madu menarik datangnya semut dan cendawan jelaga. Adanya cendawan pada buah dapat menurunkan kualitas buah.",
-        "pengendalian": [
-            "Pengendalian dapat dilakukan  dengan menginfestasikan musuh alami seperti, parasitoid Aphelinus gossypi (Timberlake), Lysiphlebus testaceipes (Cresson), predator Coccinella transversalis atau cendawan entomopatogen Neozygites fresenii."
-        ]
-    },
-    {
-        "nama": "Tungau",
-      "img": "file:///android_asset/img/tungau_1.PNG",
-        "gejala": "Tungau menyerang daun-daun muda dengan cara menghisap cairan tanaman dan menyebabkan kerusakan sehingga terjadi perubahan bentuk menjadi abnormal dan perubahan warna seperti daun menebal dan berubah warna menjadi tembaga atau kecokelatan. Daun menjadi kaku dan melengkung ke bawah, menyusut dan keriting. Tunas dan bunga gugur. Serangan berat terjadi pada musim kemarau, biasanya serangan bersamaan dengan serangan Thrips dan kutu daun.",
-        "pengendalian": [
-            "Sanitasi dengan mengeradikasi  bagian  tanaman yang terserang kemudian dimusnahkan.",
-            "Pemanfaatan musuh alami yaitu predator Ambhyseins cucumeris.",
-            "Pengendalian dengan akarisida yang efektif, terdaftar dan diijinkan Menteri Pertanian dilakukan apabila ditemukan gejala kerusakan daun dan populasi tungau."
-        ]
     }
 ]

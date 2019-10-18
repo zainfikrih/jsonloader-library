@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         // JSON as JSONObject
         JSONObject jsonObject = JSONLoader.with(getApplicationContext()).fileName("sample.json").getAsJSONObject();
         try {
-            Log.d("JSONObject", jsonObject.getJSONArray("penyakit").toString());
+            Log.d("JSONObject", jsonObject.getJSONArray("hama").toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
