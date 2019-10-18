@@ -1,4 +1,5 @@
 [![](https://jitpack.io/v/zainfikrih/jsonloader-library.svg)](https://jitpack.io/#zainfikrih/jsonloader-library)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab5f6e4c77a0474280b46883ce17092b)](https://www.codacy.com/manual/zainfikrih/jsonloader-library?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zainfikrih/jsonloader-library&amp;utm_campaign=Badge_Grade)
 
 # JSONLoader Library
 A simple library to open JSON from assets
