@@ -1,7 +1,8 @@
 [![](https://jitpack.io/v/zainfikrih/jsonloader-library.svg)](https://jitpack.io/#zainfikrih/jsonloader-library)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab5f6e4c77a0474280b46883ce17092b)](https://www.codacy.com/manual/zainfikrih/jsonloader-library?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zainfikrih/jsonloader-library&amp;utm_campaign=Badge_Grade)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![HitCount](http://hits.dwyl.io/zainfikrih/jsonloader-library.svg)](http://hits.dwyl.io/zainfikrih/jsonloader-library)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-JSONLoader%20Library-orange.svg?style=flat)](https://android-arsenal.com/details/1/7916)
 
 # JSONLoader Library
 ![Imgur](https://i.imgur.com/xczU7nd.png)
