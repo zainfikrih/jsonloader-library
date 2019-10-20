@@ -6,7 +6,7 @@
 
 # JSONLoader Library
 ![Imgur](https://i.imgur.com/xczU7nd.png)
-A simple library to open JSON from assets
+A simple Android library to open JSON from assets
 
 ## Download
 [![JitPack](https://img.shields.io/jitpack/v/github/zainfikrih/jsonloader-library?label=Download&logoColor=yellowgreen)](https://jitpack.io/#zainfikrih/jsonloader-library)
