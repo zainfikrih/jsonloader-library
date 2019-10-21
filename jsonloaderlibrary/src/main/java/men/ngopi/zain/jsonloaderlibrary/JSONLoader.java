@@ -28,8 +28,7 @@ public class JSONLoader {
         return this;
     }
 
-    public String get() {
-        String json = null;
+    public void get(StringLoaderListener stringLoaderListener) {
         try {
             InputStream inputStream = mContext.getAssets().open(mFileName);
             int size = inputStream.available();
@@ -37,15 +36,13 @@ public class JSONLoader {
             //noinspection ResultOfMethodCallIgnored
             inputStream.read(buffer);
             inputStream.close();
-            json = new String(buffer, StandardCharsets.UTF_8);
+            stringLoaderListener.onResponse(new String(buffer, StandardCharsets.UTF_8));
         } catch (IOException e) {
-            e.printStackTrace();
+            stringLoaderListener.onFailure(e);
         }
-        return json;
     }
 
-    public JSONObject getAsJSONObject() {
-        JSONObject jsonObject = null;
+    public void getAsJSONObject(JSONObjectLoaderListener jsonObjectLoaderListener) {
         try {
             InputStream inputStream = mContext.getAssets().open(mFileName);
             int size = inputStream.available();
@@ -54,15 +51,13 @@ public class JSONLoader {
             inputStream.read(buffer);
             inputStream.close();
             String json = new String(buffer, StandardCharsets.UTF_8);
-            jsonObject = new JSONObject(json);
+            jsonObjectLoaderListener.onResponse(new JSONObject(json));
         } catch (IOException | JSONException e) {
-            e.printStackTrace();
+            jsonObjectLoaderListener.onFailure(e);
         }
-        return jsonObject;
     }
 
-    public JSONArray getAsJSONArray() {
-        JSONArray jsonArray = null;
+    public void getAsJSONArray(JSONArrayLoaderListener jsonArrayLoaderListener) {
         try {
             InputStream inputStream = mContext.getAssets().open(mFileName);
             int size = inputStream.available();
@@ -71,10 +66,9 @@ public class JSONLoader {
             inputStream.read(buffer);
             inputStream.close();
             String json = new String(buffer, StandardCharsets.UTF_8);
-            jsonArray = new JSONArray(json);
+            jsonArrayLoaderListener.onResponse(new JSONArray(json));
         } catch (IOException | JSONException e) {
-            e.printStackTrace();
+            jsonArrayLoaderListener.onFailure(e);
         }
-        return jsonArray;
     }
 }

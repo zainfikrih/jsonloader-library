@@ -9,7 +9,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+
+import men.ngopi.zain.jsonloaderlibrary.JSONArrayLoaderListener;
 import men.ngopi.zain.jsonloaderlibrary.JSONLoader;
+import men.ngopi.zain.jsonloaderlibrary.JSONObjectLoaderListener;
+import men.ngopi.zain.jsonloaderlibrary.StringLoaderListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,19 +24,54 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // JSON as String
-        String jsonString = JSONLoader.with(getApplicationContext()).fileName("sample.json").get();
-        Log.d("JSONString", jsonString);
+        JSONLoader.with(getApplicationContext())
+                .fileName("sample.json")
+                .get(new StringLoaderListener() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("JSONString", response);
+                    }
+
+                    @Override
+                    public void onFailure(IOException error) {
+
+                    }
+                });
 
         // JSON as JSONObject
-        JSONObject jsonObject = JSONLoader.with(getApplicationContext()).fileName("sample.json").getAsJSONObject();
-        try {
-            Log.d("JSONObject", jsonObject.getJSONArray("hama").toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        JSONLoader.with(getApplicationContext())
+                .fileName("sample.json")
+                .getAsJSONObject(new JSONObjectLoaderListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+                            Log.d("JSONObject", response.getJSONArray("hama").toString());
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Exception error) {
+
+                    }
+                });
+
 
         // JSON as JSONArray
-        JSONArray jsonArray = JSONLoader.with(getApplicationContext()).fileName("sample_array.json").getAsJSONArray();
-        Log.d("JSONArray", jsonArray.toString());
+        JSONLoader.with(getApplicationContext())
+                .fileName("sample_array.json")
+                .getAsJSONArray(new JSONArrayLoaderListener() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        Log.d("JSONArray", response.toString());
+                    }
+
+                    @Override
+                    public void onFailure(Exception error) {
+
+                    }
+                });
+
     }
 }
