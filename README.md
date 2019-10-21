@@ -49,6 +49,11 @@ Get JSON as JSON Array:
 
 For some examples, see the sample App.
 
+## Contributors ✨
+<a href="https://github.com/zainfikrih/jsonloader-library/graphs/contributors">
+  <img src="https://contributors-img.firebaseapp.com/image?repo=zainfikrih/jsonloader-library" />
+</a>
+
 ## License
 ```license
 Copyright 2019 Zain Fikri H
