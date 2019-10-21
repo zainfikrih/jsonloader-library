@@ -1,6 +1,5 @@
 package men.ngopi.zain.jsonloaderlibrary;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 
 import org.json.JSONArray;
@@ -12,13 +11,16 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 public class JSONLoader {
-    @SuppressLint("StaticFieldLeak")
-    private static Context mContext;
+
+    private Context mContext;
     private String mFileName;
 
+    private JSONLoader(Context context) {
+        this.mContext = context;
+    }
+
     public static JSONLoader with(Context applicationContext) {
-        mContext = applicationContext;
-        return new JSONLoader();
+        return new JSONLoader(applicationContext);
     }
 
     public JSONLoader fileName(String fileName) {
