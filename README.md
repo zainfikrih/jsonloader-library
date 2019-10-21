@@ -34,17 +34,53 @@ For more information, see [Where do I place the 'assets' folder in Android Studi
 
 Get JSON as a string:
 ```java
-  String jsonString = JSONLoader.with(getApplicationContext()).fileName("filename.json").get();
+JSONLoader.with(getApplicationContext())
+	.fileName("filename.json")
+	.get(new StringLoaderListener() {
+	    @Override
+	    public void onResponse(String response) {
+		// response as String
+	    }
+
+	    @Override
+	    public void onFailure(IOException error) {
+		// error
+	    }
+	});
 ```
 
 Get JSON as JSON Object:
 ```java
-  JSONObject jsonObject = JSONLoader.with(getApplicationContext()).fileName("filename.json").getAsJSONObject();
+JSONLoader.with(getApplicationContext())
+	.fileName("filename.json")
+	.getAsJSONObject(new JSONObjectLoaderListener() {
+	    @Override
+	    public void onResponse(JSONObject response) {
+	    	// response as JSONObject
+	    }
+
+	    @Override
+	    public void onFailure(Exception error) {
+		// error
+	    }
+	});
 ```
 
 Get JSON as JSON Array:
 ```java
-  JSONArray jsonArray = JSONLoader.with(getApplicationContext()).fileName("filename.json").getAsJSONArray();
+JSONLoader.with(getApplicationContext())
+	.fileName("filename.json")
+	.getAsJSONArray(new JSONArrayLoaderListener() {
+	    @Override
+	    public void onResponse(JSONArray response) {
+		// response ad JSONArray
+	    }
+
+	    @Override
+	    public void onFailure(Exception error) {
+		// error
+	    }
+	});
 ```
 
 For some examples, see the sample App.
