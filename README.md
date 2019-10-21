@@ -9,8 +9,6 @@
 A simple Android library to open JSON from assets
 
 ## Download
-[![JitPack](https://img.shields.io/jitpack/v/github/zainfikrih/jsonloader-library?label=Download&logoColor=yellowgreen)](https://jitpack.io/#zainfikrih/jsonloader-library)
-
 Grab the latest dependencies through Gradle, add it to your build.gradle with:
 ```gradle
 allprojects {
