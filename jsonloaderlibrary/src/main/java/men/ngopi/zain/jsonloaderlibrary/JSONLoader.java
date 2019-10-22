@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
@@ -28,15 +29,23 @@ public class JSONLoader {
         return this;
     }
 
+    private String loadAsString() throws IOException {
+        InputStream inputStream = mContext.getAssets().open(mFileName);
+        ByteArrayOutputStream result = new ByteArrayOutputStream();
+        byte[] buffer = new byte[1024];
+        int length;
+
+        while ((length = inputStream.read(buffer)) != -1) {
+            result.write(buffer, 0, length);
+        }
+        inputStream.close();
+        return result.toString(StandardCharsets.UTF_8.name());
+    }
+
     public void get(StringLoaderListener stringLoaderListener) {
         try {
-            InputStream inputStream = mContext.getAssets().open(mFileName);
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            //noinspection ResultOfMethodCallIgnored
-            inputStream.read(buffer);
-            inputStream.close();
-            stringLoaderListener.onResponse(new String(buffer, StandardCharsets.UTF_8));
+            String result = loadAsString();
+            stringLoaderListener.onResponse(result);
         } catch (IOException e) {
             stringLoaderListener.onFailure(e);
         }
@@ -44,14 +53,8 @@ public class JSONLoader {
 
     public void getAsJSONObject(JSONObjectLoaderListener jsonObjectLoaderListener) {
         try {
-            InputStream inputStream = mContext.getAssets().open(mFileName);
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            //noinspection ResultOfMethodCallIgnored
-            inputStream.read(buffer);
-            inputStream.close();
-            String json = new String(buffer, StandardCharsets.UTF_8);
-            jsonObjectLoaderListener.onResponse(new JSONObject(json));
+            String result = loadAsString();
+            jsonObjectLoaderListener.onResponse(new JSONObject(result));
         } catch (IOException | JSONException e) {
             jsonObjectLoaderListener.onFailure(e);
         }
@@ -59,14 +62,9 @@ public class JSONLoader {
 
     public void getAsJSONArray(JSONArrayLoaderListener jsonArrayLoaderListener) {
         try {
-            InputStream inputStream = mContext.getAssets().open(mFileName);
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            //noinspection ResultOfMethodCallIgnored
-            inputStream.read(buffer);
-            inputStream.close();
-            String json = new String(buffer, StandardCharsets.UTF_8);
-            jsonArrayLoaderListener.onResponse(new JSONArray(json));
+
+            String result = loadAsString();
+            jsonArrayLoaderListener.onResponse(new JSONArray(result));
         } catch (IOException | JSONException e) {
             jsonArrayLoaderListener.onFailure(e);
         }
