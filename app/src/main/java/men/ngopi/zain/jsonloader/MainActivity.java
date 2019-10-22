@@ -9,8 +9,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-
 import men.ngopi.zain.jsonloaderlibrary.JSONArrayLoaderListener;
 import men.ngopi.zain.jsonloaderlibrary.JSONLoader;
 import men.ngopi.zain.jsonloaderlibrary.JSONObjectLoaderListener;
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(IOException error) {
+                    public void onFailure(Exception error) {
 
                     }
                 });
