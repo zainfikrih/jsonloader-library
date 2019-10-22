@@ -44,8 +44,7 @@ public class JSONLoader {
 
     public void get(StringLoaderListener stringLoaderListener) {
         try {
-            String result = loadAsString();
-            stringLoaderListener.onResponse(result);
+            stringLoaderListener.onResponse(loadAsString());
         } catch (IOException e) {
             stringLoaderListener.onFailure(e);
         }
@@ -53,8 +52,7 @@ public class JSONLoader {
 
     public void getAsJSONObject(JSONObjectLoaderListener jsonObjectLoaderListener) {
         try {
-            String result = loadAsString();
-            jsonObjectLoaderListener.onResponse(new JSONObject(result));
+            jsonObjectLoaderListener.onResponse(new JSONObject(loadAsString()));
         } catch (IOException | JSONException e) {
             jsonObjectLoaderListener.onFailure(e);
         }
@@ -62,9 +60,7 @@ public class JSONLoader {
 
     public void getAsJSONArray(JSONArrayLoaderListener jsonArrayLoaderListener) {
         try {
-
-            String result = loadAsString();
-            jsonArrayLoaderListener.onResponse(new JSONArray(result));
+            jsonArrayLoaderListener.onResponse(new JSONArray(loadAsString()));
         } catch (IOException | JSONException e) {
             jsonArrayLoaderListener.onFailure(e);
         }
